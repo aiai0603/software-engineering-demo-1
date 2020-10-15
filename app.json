@@ -3,7 +3,7 @@
    
     "pages/index/index",
     "pages/logs/logs",
-    "pages/wfs/wfs",
+    "pages/main/main",
     "pages/rule/rule",
     "pages/policy/policy",
     "pages/score/score",
@@ -25,7 +25,7 @@
   "tabBar": {
     "selectedColor":  "#f21515",
     "list": [{
-      "pagePath": "pages/wfs/wfs",
+      "pagePath": "pages/main/main",
       "text": "首页",
       "iconPath":"pages/1.jpg" ,
       "selectedIconPath": "pages/1-1.jpg"
