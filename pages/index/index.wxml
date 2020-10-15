@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+   
+</view>
+<navigator url="../set/set"  >
+  <view class="tags-1">
+        <view> 个人设置</view><view>></view>   
+  </view>
+</navigator>
+
+  <view class="tags-2">
+
+    <view class="tags" bindtap="gotologs">
+        <view> 我的券包</view><view>></view>   
+  </view>
+<navigator url="../score/score"  >
+    <view class="tags">
+        <view> 积分信息</view><view>></view>   
+  </view>
+   </navigator>
+<navigator url="../rule/rule"  >
+    <view class="tags">
+      <view> 等级规则</view><view>></view>   
+  </view>
+  </navigator>
+  <navigator url="../policy/policy"  >
+   <view class="tags">
+        <view> 隐私政策</view><view>></view>   
+  </view>
+    </navigator>
+   <view class="tags">
+        <view> 联系客服</view><view>></view>   
+  </view>
+   <view class="tags">
+        <view> 版本号</view><view>v1.5.9</view>   
+  </view>
+   <view class="tags-under" bindtap="loginout">
+        <view > 退出登录</view><view>></view>   
+  </view>
+  </view>
+ 
+
+
+
