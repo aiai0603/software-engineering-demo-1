@@ -1,0 +1,14 @@
+<view class="up">
+      <view class="word">
+      <view class="title">雪碧满4减2券</view>
+      <view class="grey">2020.1.1-2021.1.1有效</view>
+      </view>
+      <view>
+      
+      <button disabled="{{disabled}}" bindtap="get" style="width:200rpx;color:white;background-color:{{color}}" >领取</button>
+      <view class="grey">剩余56%</view>
+      </view>
+</view>
+
+<image src="../bg.jpg" class="img"></image>
+
