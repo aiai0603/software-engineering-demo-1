@@ -1,0 +1,16 @@
+/* pages/set/set.wxss */
+page{
+  background-color: #f4eaea;
+}
+
+.line{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120rpx;
+  margin-top:70rpx;
+  background-color: white;
+ 
+}
