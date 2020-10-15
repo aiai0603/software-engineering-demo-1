@@ -1,0 +1,53 @@
+<view id='tabs'>
+  <view class='tabs-box'>
+    <block wx:for="{{['未使用','历史记录']}}" wx:key="index">
+      <view class="tabs-item {{currentTabIndex == index ? 'selected' : '' }}" bindtap='onTabsItemTap' data-index='{{index}}'>
+        {{item}}      
+      </view>
+    </block>
+  </view>
+  <view class='ordert-detail'>
+    <view hidden='{{currentTabIndex != 0}}'>
+        <view class="card"  wx:for="{{price}}" wx:if="{{item.available==0}}">
+          <view class="left">
+            <view class="left-title">¥{{item.count}}</view>
+            <view class="left-under">满{{item.money}}元可用</view>
+          </view>
+          <view class="word">
+              <view class="title">
+                {{item.name}}
+              </view>
+              <view class="under">
+
+               {{item.day}}
+              </view>
+          </view> 
+        </view>
+
+    
+
+
+
+       
+    </view>
+    <view hidden='{{currentTabIndex != 1}}'>
+         <view class="card"  wx:for="{{price}}" wx:if="{{item.available!=0}}">
+          <view class="left-2">
+            <view class="left-title">¥{{item.count}}</view>
+            <view class="left-under">满{{item.money}}元可用</view>
+          </view>
+          <view class="word">
+              <view class="title">
+                {{item.name}}
+              </view>
+              <view class="under">
+
+               {{item.day}}
+              </view>
+          </view> 
+        </view>
+    
+    </view>
+   
+  </view>
+</view>
