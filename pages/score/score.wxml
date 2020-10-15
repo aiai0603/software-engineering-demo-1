@@ -1,0 +1,42 @@
+<view class="main">
+      <view>
+      <view>我的积分</view>
+      <view class="score">{{scorenum}}</view>
+      </view>
+      <view>
+       <picker  mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+   
+
+        <view class="button" >筛选</view>
+
+          </picker>
+          <navigator url="../rule/rule"  >
+        <view style="font-size:30rpx">
+        积分规则?
+        </view>
+         </navigator >
+      </view>
+</view>
+
+<view class="card-group">
+    <view class="card" wx:for="{{score}}">
+    <view>
+        <view style="font-size:35rpx">
+        {{item.title}}
+        </view>
+        <view style="font-size:30rpx;color:grey">
+        {{item.day}}
+        </view>
+    </view>
+    <view  style="font-size:50rpx;color:orange" wx:if="{{item.point>0}}">
+    +{{item.point}}
+    </view>
+    <view  style="font-size:50rpx;color:orange" wx:else>
+    {{item.point}}
+    </view>
+    </view>
+
+    
+
+</view>
+
