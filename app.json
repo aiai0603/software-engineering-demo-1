@@ -1,0 +1,46 @@
+{
+  "pages":[
+   
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wfs/wfs",
+    "pages/rule/rule",
+    "pages/policy/policy",
+    "pages/score/score",
+    "pages/set/set",
+    "pages/show/show",
+    "pages/shop/shop"
+   
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#f21515",
+    "navigationBarTitleText": "Happy everyday",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor":  "#f21515",
+    "list": [{
+      "pagePath": "pages/wfs/wfs",
+      "text": "首页",
+      "iconPath":"pages/1.jpg" ,
+      "selectedIconPath": "pages/1-1.jpg"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "优惠券",
+      "iconPath":"pages/3.jpg" ,
+      "selectedIconPath": "pages/3-3.jpg"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath":"pages/2.jpg" ,
+      "selectedIconPath": "pages/2-2.jpg"
+    }]
+  }
+    
+  
+}
