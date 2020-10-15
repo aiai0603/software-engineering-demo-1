@@ -1,0 +1,30 @@
+<view class="main">
+      <view>
+      <view>我的积分</view>
+      <view class="scoreall">{{score}}</view>
+      </view>
+       <view>
+      
+      <text>\n</text>
+     
+        <navigator url="../rule/rule"  >
+            <view class="button" >兑换规则</view>
+
+         </navigator>
+      </view>
+       
+
+</view>
+<view class="card-group" >
+    <view class="card" wx:for="{{shop}}" wx:key="{{item.index}}" bindtap="buy" data-item="{{item}}">
+    <image class="img" src="{{item.src}}">
+    </image>
+    <view class="title">
+   {{item.title}}
+    </view >
+    <view class="score">
+       {{item.point}}积分
+    </view>
+ </view>
+ 
+</view>
