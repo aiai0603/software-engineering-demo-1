@@ -1,0 +1,35 @@
+/* pages/show/show.wxss */
+page{
+  background-color: #f4eaea;
+}
+
+.up{
+  margin:30rpx;
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 30rpx 50rpx;
+  border-radius: 5%;
+}
+
+.grey{
+  font-size: 32rpx;
+  color:grey;
+  margin-top: 10rpx;
+}
+
+
+.title{
+  font-size: 40rpx;
+  font-weight: 800;
+  margin-bottom:20rpx;
+}
+
+.img{
+  width: 92%;
+  margin: 0rpx 30rpx;
+  height: 1100rpx;
+}
