@@ -1,0 +1,56 @@
+<view class="idcard">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="login">授权登录 </button>
+    <block wx:else>
+      <view class="up">
+       <view class="left">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+       </view>
+         <view class="{{style}}" bindtap="sign" >{{sign}}</view>
+      
+      </view>
+
+      <view class="under">
+       <view class="list">
+        
+          <view class="num">{{price}}</view>
+            <view class="title" bindtap="gotologs">优惠券></view>
+       </view>
+        <view class="list">
+         
+          <view class="num">{{score}}</view>
+           <view class="title" bindtap="gotoscore">积分></view>
+       </view>
+      </view>
+
+    </block>
+  </view>
+</view> 
+
+    
+
+
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval='5000' indicator-active-color="red" circular="true" class="lb">
+  
+    <swiper-item>
+    <navigator url="../show/show">
+      <image class='top-img' src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=496128727,2454274953&fm=26&gp=0.jpg'></image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <image class='top-img' src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2392941703,703112542&fm=26&gp=0.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class='top-img' src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2279503484,4154056829&fm=26&gp=0.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+ <navigator url="../shop/shop">
+<view class="lb">
+ <image  class='top-img' src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3885841297,3967546734&fm=26&gp=0.jpg"></image>
+</view>
+</navigator>
+
