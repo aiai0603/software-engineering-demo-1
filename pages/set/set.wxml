@@ -1,0 +1,5 @@
+<!--pages/set/set.wxml-->
+<view class="line">
+<view style="margin-left:40rpx">接受促销广告</view>
+<switch></switch>
+</view>
